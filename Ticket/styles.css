@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 100 900; /* or 400 900 if that’s the supported range */
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --bg-deep: #0c1026;
+  --bg-violet: #2a0a4a;
+  --bg-purple: #3c0f6b;
+  --glow-magenta: #7a1bb2;
+  --accent-coral: #ff6e5b;
+  --accent-peach: #ffa08f;
+  --card-bg: #2b2146;
+  --card-border: #4a3b67;
+  --text-muted: #c9c2d9;
+  --text: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inconsolata", monospace;
+  background-image: url("../assets/images/background-desktop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--bg-deep);
+  color: var(--text);
+}
+h1 {
+  font-weight: 700;
+}
+p {
+  font-weight: 400;
+}
+header {
+  margin: 0 20px;
+}
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+}
+.main-logo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.titles {
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.main-subtitle {
+  color: var(--text-muted);
+}
+.ticket {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.ticket-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ticket-container img {
+  width: 100%;
+}
+.ticket-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -210px;
+  left: 30px;
+}
+.upper-content {
+  display: flex;
+  flex-direction: column;
+}
+.ticket-logo {
+  width: 60%;
+}
+.ticket-logo img {
+  width: 100%;
+}
+.event-date {
+  font-size: 1.5rem;
+}
+.below-content {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.ticket-profile {
+  width: 15%;
+  margin-right: 5px;
+}
+.ticket-profile img {
+  width: 100%;
+  border-radius: 6px;
+}
+.ticket-user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ticket-id {
+  transform: rotate(90deg);
+  position: relative;
+  top: -85px;
+  left: 417px;
+  max-width: fit-content;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 650px) {
+  .ticket {
+    width: 300px;
+  }
+  .ticket-content-wrapper {
+    width: 70%;
+    position: relative;
+    top: -123px;
+    left: 5px;
+  }
+  .ticket-id {
+    top: -70px;
+    left: 203px;
+  }
+}
