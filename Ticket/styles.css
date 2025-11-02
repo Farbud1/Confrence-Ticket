@@ -2,7 +2,7 @@
   font-family: "Inconsolata";
   src: url("../assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf")
     format("truetype");
-  font-weight: 100 900; /* or 400 900 if that’s the supported range */
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
@@ -110,6 +110,8 @@ header {
 .ticket-profile img {
   width: 100%;
   border-radius: 6px;
+  object-fit: cover;
+  height: 80px;
 }
 .ticket-user-details {
   display: flex;
@@ -138,5 +140,8 @@ header {
   .ticket-id {
     top: -70px;
     left: 203px;
+  }
+  .ticket-profile img {
+    height: 25px;
   }
 }

@@ -30,33 +30,55 @@
           <div class="form-group">
             <div class="upload-avatar">
               <label for="avatar">Upload Avatar</label>
-              <input type="file" id="avatar" name="avatar" hidden />
+              <input type="file" id="avatar" name="avatar" accept="image/jpeg,image/jpg,image/png" hidden />
               <div class="drag-and-drop-zone">
-                <div class="upload-icon"><img src="../assets/images/icon-upload.svg" alt=""></div>
+                <div class="upload-icon">
+                  <img src="../assets/images/icon-upload.svg" alt="" />
+                </div>
                 <div class="upload-text">Drag and drop or click to upload</div>
               </div>
               <div class="upload-limit">
-                <i class="icon-info"><img src="../assets/images/icon-info.svg" alt=""></i>Upload your photo(JPG or PNG,max size : 500kb)
+                <i class="icon-info"
+                  ><img src="../assets/images/icon-info.svg" alt="" /></i
+                >Upload your photo(JPG or PNG,max size : 500kb)
               </div>
             </div>
             <div class="form-group-item">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your fullname" />
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your fullname"
+              />
             </div>
             <div class="form-group-item">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Example@gmail.com" />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Example@gmail.com"
+              />
             </div>
             <div class="form-group-item">
-                <label for="github">GitHub Username</label>
-                <input type="text" id="github" name="github" placeholder="@username" />
+              <label for="github">GitHub Username</label>
+              <input
+                type="text"
+                id="github"
+                name="github"
+                placeholder="@username"
+              />
             </div>
             <div class="generate-button">
-                <button type="button" id="generate-button">Generate My Ticket</button>
+              <button type="button" id="generate-button">
+                Generate My Ticket
+              </button>
             </div>
           </div>
         </form>
       </section>
     </main>
+    <script src="./app.js"></script>
   </body>
 </html>

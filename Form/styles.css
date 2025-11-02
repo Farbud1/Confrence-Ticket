@@ -82,6 +82,17 @@ p {
   padding: 40px;
   justify-content: center;
   border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.drag-and-drop-zone:hover {
+  border-color: var(--glow-magenta);
+}
+
+.drag-and-drop-zone.drag-over {
+  border-color: var(--accent-coral);
+  background-color: rgba(122, 27, 178, 0.1);
 }
 .upload-limit {
   color: var(--text-muted);
